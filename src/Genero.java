@@ -1,11 +1,10 @@
 public enum Genero {
-    ACCION,
-    AVENTURA,
-    ESTRATEGIA,
+    Accion,
+    Aventura,
+    Estrategia,
     RPG,
-    DEPORTES,
-    DISPAROS,
-    PLATAFORMAS,
-    SIMULACION,
-    OTRO
+    Deportes,
+    Disparos,
+    Plataformas,
+    Simulacion
 }

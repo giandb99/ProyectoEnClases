@@ -1,8 +1,13 @@
 /**
  * La clase Proveedor representa a un proveedor de videojuegos.
  * Hereda los campos y métodos de la clase Persona.
+ *
+ *  * @author Gianfranco Lombardo Lopez, Fabio Gonzalez Trujillo
+ *  * @version 0.1
+ *  * @since 12/06/2023
+ *
  */
-public class Proveedor extends Persona {
+public class Proveedor extends Usuario {
 
     private int CIF;
 
@@ -24,5 +29,12 @@ public class Proveedor extends Persona {
      * Provee videojuegos al sistema.
      */
     public void proveerVideojuegos(){}
+
+    /**
+     * Reabastece el Stock de videojuegos
+     *
+     */
+    public void reabastecerStock(){}
+
 
 }

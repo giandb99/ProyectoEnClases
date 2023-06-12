@@ -1,60 +1,31 @@
-import java.util.Date;
-
 /**
- * La clase Usuario representa a un usuario del sistema.
- * Hereda los campos y métodos de la clase Persona.
+ * La clase Persona representa a una persona con su información básica.
+ *
+ *  * @author Gianfranco Lombardo Lopez, Fabio Gonzalez Trujillo
+ *  * @version 0.1
+ *  * @since 12/06/2023
+ *
  */
-public class Usuario extends Persona{
+public class Usuario {
 
-    private final Date fechaNacimiento;
+    private String nombreCompleto;
+    private String correo;
+    private int telefono;
+    private String direccion;
 
     /**
-     * Crea una nueva instancia de la clase Usuario.
+     * Crea una nueva instancia de la clase Persona.
      *
-     * @param nombreCompleto El nombre completo del usuario.
-     * @param correo El correo electrónico del usuario.
-     * @param telefono El número de teléfono del usuario.
-     * @param direccion La dirección del usuario.
-     * @param fechaNacimiento La fecha de nacimiento del usuario.
+     * @param nombreCompleto El nombre completo de la persona.
+     * @param correo El correo electrónico de la persona.
+     * @param telefono El número de teléfono de la persona.
+     * @param direccion La dirección de la persona.
      */
-    public Usuario(String nombreCompleto, String correo, int telefono, String direccion, Date fechaNacimiento ) {
-        super(nombreCompleto, correo, telefono, direccion);
-        this.fechaNacimiento = fechaNacimiento;
+    public Usuario(String nombreCompleto, String correo, int telefono, String direccion) {
+        this.nombreCompleto = nombreCompleto;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.direccion = direccion;
     }
-
-    /**
-     * Registra al usuario en el sistema.
-     */
-    public void registrarse(){}
-
-    /**
-     * Inicia sesión en el sistema.
-     */
-    public void iniciarSesion(){}
-
-    /**
-     * Modifica la información del usuario.
-     */
-    public void modificarInformacion(){}
-
-    /**
-     * Elimina la cuenta del usuario.
-     */
-    public void eliminarCuenta(){}
-
-    /**
-     * Visualiza el contenido disponible.
-     */
-    public void visualizarContenido(){}
-
-    /**
-     * Visualiza el carrito de compras.
-     */
-    public void visualizarCarrito(){}
-
-    /**
-     * Visualiza la lista de deseos del usuario.
-     */
-    public void visualizarListaDeseo(){}
 
 }

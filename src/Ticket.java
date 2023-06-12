@@ -8,6 +8,7 @@ public class Ticket {
     private String itemsCompra[];
     private float precioPagado;
     private Date fechaHora;
+    private double descuento;
 
     /**
      * Crea una nueva instancia de la clase Ticket.
@@ -16,10 +17,11 @@ public class Ticket {
      * @param precioPagado El precio total pagado.
      * @param fechaHora La fecha y hora de la compra.
      */
-    public Ticket(String[] itemsCompra, float precioPagado, Date fechaHora) {
+    public Ticket(String[] itemsCompra, float precioPagado, Date fechaHora, double descuento) {
         this.itemsCompra = itemsCompra;
         this.precioPagado = precioPagado;
         this.fechaHora = fechaHora;
+        this.descuento = descuento;
     }
 
     /**
