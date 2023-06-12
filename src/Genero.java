@@ -1,3 +1,6 @@
+/**
+ * Enumeración que representa los géneros de videojuegos.
+ */
 public enum Genero {
     Accion,
     Aventura,
